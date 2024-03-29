@@ -1,0 +1,36 @@
+@import "./reset.scss";
+@import "./blocks/nav";
+@import "./blocks/hero";
+@import "./blocks/availability";
+@import "./blocks/popular";
+@import "./blocks/facility";
+@import "./blocks/discover";
+@import "./blocks/review";
+@import "./blocks/news";
+@import "./blocks/contact";
+@import "./blocks/footer";
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+} 
+
+.footer__line{
+    padding-top: 60px;
+    margin-top: 60px;
+    max-width: 100%;
+    width: 100%;
+    padding: 17px 0;
+    background-color: #B1BED0;
+
+    .last__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p{
+            color: #0000006B;
+        }
+    }
+}

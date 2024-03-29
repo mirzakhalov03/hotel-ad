@@ -1,0 +1,51 @@
+.review{
+    padding: 60px;
+    margin: 60px;
+
+    header{
+        text-align: start;
+        margin: 0;
+    }
+
+    &__wrapper{
+        max-width: 90%;
+        margin: 0 auto;
+        width: 100%;
+
+        @extend %display;
+
+    }
+
+    .review__card{
+        max-width: 350px;
+        width: 100%;
+        background-color: #F6FCFA;
+        border-radius: 10px;
+        padding: 50px 37px;
+        transition: .3s;
+
+        h2{
+            font-size: 30px;
+            color: #101828;
+
+        }
+
+        small{
+            font-size: 10px;
+            color: #606772;
+        }
+
+        p{
+            font-size: 18px;
+            color: #6D7589;
+        }
+
+        &:hover{
+            background-color: #7188AA8C;
+            transform: scale(110%);
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+    }
+
+    
+}

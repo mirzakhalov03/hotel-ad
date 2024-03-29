@@ -1,0 +1,44 @@
+.nav{
+    background-color: #EAEFF6;
+    &__hug{
+        @extend %display;
+
+        max-width: 100%;
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px
+    }
+
+    &__logo{
+        img{
+            margin-left: 10px
+        }
+    }
+
+    &__ul{
+        @extend %display;
+        gap: 50px;
+
+        li{
+            height: 30px;
+
+            &:hover{
+                border-bottom: 2px solid #597193;
+                color: #597193;
+            }
+        }
+
+        a{
+            color: #353637;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 2%;
+
+            &:hover{
+                color: #597193;
+            }
+        }
+
+    }
+    
+}

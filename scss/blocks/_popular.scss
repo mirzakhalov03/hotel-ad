@@ -1,0 +1,60 @@
+.popular{
+    margin-top: 60px;
+    padding-top: 60px;
+
+    &__wrapper{
+        @extend %display;
+
+        max-width: 85%;
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 45px;
+    }
+
+    &__card{
+        max-width: 350px;
+        width: 100%;
+        border: 1px solid #596B86;
+        border-radius: 7px;
+        overflow: hidden;
+        transition: .35s;
+
+
+        &:hover{
+            background-color: rgba(30, 143, 255, 0.15);
+            transform: scale(110%);
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        }
+    }
+
+    &__card-img{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    &__card-content{
+        max-width: 100%;
+        width: 100%;
+        padding: 24px 22px;
+
+        h3{
+            font-size: 24px;
+            color: #131313;
+            font-family: var(--opensans);
+            font-weight: 400;
+            
+        }
+        img{
+            margin: 10px 0;
+        }
+        b{
+            font-size: 30px;
+            font-family: var(--opensans);
+            font-weight: 600;
+            color: $navy-color;
+        }
+        p{
+            color: rgba(0, 0, 0, 0.636);
+        }
+    }
+}

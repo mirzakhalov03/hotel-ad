@@ -1,0 +1,150 @@
+.hero{
+    background-color: #EAEFF6;
+    padding-top: 60px;
+
+    &__absolute-imgs{
+        position: absolute;
+        right: 0;
+        height: 800px;
+        width: 55%;
+
+        .elipse{
+            position: absolute;
+            left: 7%;
+            bottom: 17%;
+        }
+
+        .small-1{
+            position: absolute;
+            right: 20%;
+            bottom: 28%;
+            width: 27px;
+        }
+
+        .small-2{
+            position: absolute;
+            right: 20%;
+            top: 12%;
+        }
+
+        .small-3{
+            position: absolute;
+            left: 10%;
+            top: 27%;
+            width: 21px;
+        }
+    }
+
+    &__wrapper{
+        @extend %display;
+
+        gap: 30px;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    &__content{
+        max-width: 31.5%;
+        width: 100%;
+
+        h1{
+            font-size: 45px;
+            line-height: 55px;
+            font-weight: 600;
+            font-family: var(--opensans);
+            color: #3D4550;
+        }
+
+        :nth-child(2){
+            margin: 20px 0;
+        }
+
+
+    }
+
+    .btn__grouper{
+        @extend %display;
+
+        max-width: 80%;
+        margin: 20px 0;
+        
+        span{
+            display: block;
+
+            display: flex;
+            align-items: center;    
+            font-family: var(--opensans);
+            line-height: 26px;
+            color: #353637;
+        }
+
+
+
+    }
+
+    &__img{
+        max-width: 50%;
+        width: 100%;
+        height: 700px;
+        position: relative;
+
+        .nest-one{
+            position: absolute;
+            bottom: 0;
+            z-index: 12;
+            height: 600px;
+            right: 34%;
+        }
+    }
+
+    &__stat-box{
+        max-width: 210px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: white;
+        position: absolute;
+        bottom: 10%;
+        z-index: 13;
+        left: -15%;
+
+
+        .stat{
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+        
+        }
+
+
+    }
+
+    &__payment-box{
+        max-width: 115px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: white;
+        position: absolute;
+        top: 25%;
+        right: 10%;
+        z-index: 13;
+
+        padding: 20px;
+        text-align: center;
+
+        .card-circle{
+            max-width: 38px;
+            width: 100%;
+            height: 38px;
+            border-radius: 50%;
+            background-color: #C9D6E9DE;
+            margin: 0 auto;
+
+            img{
+                width: 20px;
+                height: 20px;
+                margin: auto;
+                margin-top: 10px;
+            }
+        }
+    }
+}
